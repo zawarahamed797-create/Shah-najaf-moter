@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Shah-e-Najaf Motors | Faisalabad Road, Mananwala</title>
+<meta name="description" content="Shah-e-Najaf Motors — buy, sell, inspect used cars on Faisalabad Road, Mananwala, District Sheikhupura. Full mechanical inspections, transparent rates, honest paperwork.">
+<meta name="theme-color" content="#0a0b0d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <svg class="loader-gauge" viewBox="0 0 100 60" width="110" height="66">
+      <path d="M8,55 A42,42 0 0,1 92,55" fill="none" stroke="#2a2f35" stroke-width="4"/>
+      <path class="loader-sweep" d="M8,55 A42,42 0 0,1 92,55" fill="none" stroke="#f2a93b" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <p class="loader-text">SHAH-E-NAJAF MOTORS</p>
+  </div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <span class="nav-logo-mark">SNM</span>
+      <span class="nav-logo-text">Shah-e-Najaf <em>Motors</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services" data-nav>Services</a>
+      <a href="#prices" data-nav>Rate List</a>
+      <a href="#inspection" data-nav>Inspection</a>
+      <a href="#location" data-nav>Location</a>
+      <a href="#book" data-nav class="nav-cta">Book a Visit</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-beams" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal-up" data-delay="0">Faisalabad Road · Mananwala · Distt. Sheikhupura</p>
+    <h1 class="hero-title">
+      <span class="reveal-up" data-delay="1">Buy. Sell. Inspect.</span>
+      <span class="reveal-up" data-delay="2">Drive away <em>confident.</em></span>
+    </h1>
+    <p class="hero-sub reveal-up" data-delay="3">
+      Shah-e-Najaf Motors has been matching honest buyers with honest cars near
+      Sare Rah Hotel — full mechanical inspections, straight paperwork, and a
+      rate list you can see before you ever walk in.
+    </p>
+    <div class="hero-actions reveal-up" data-delay="4">
+      <a href="#book" class="btn btn-primary">
+        <span>Book a Visit</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#inspection" class="btn btn-ghost"><span>Request Inspection</span></a>
+    </div>
+  </div>
+
+  <!-- Signature element: animated inspection gauge, needle tied to page scroll -->
+  <div class="hero-gauge reveal-scale" aria-hidden="true">
+    <svg viewBox="0 0 220 140" width="100%" height="100%">
+      <path d="M20,120 A90,90 0 0,1 200,120" fill="none" stroke="#20252b" stroke-width="10"/>
+      <path id="gaugeFill" d="M20,120 A90,90 0 0,1 200,120" fill="none" stroke="url(#gaugeGrad)" stroke-width="10" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#f2a93b"/>
+          <stop offset="1" stop-color="#ffc266"/>
+        </linearGradient>
+      </defs>
+      <line id="gaugeNeedle" x1="110" y1="120" x2="110" y2="42" stroke="#eef0f2" stroke-width="3" stroke-linecap="round" transform="rotate(-90 110 120)"/>
+      <circle cx="110" cy="120" r="7" fill="#eef0f2"/>
+    </svg>
+    <p class="gauge-label"><span id="gaugePct">0</span>% Inspected as You Scroll</p>
+  </div>
+
+  <div class="hero-stats reveal-up" data-delay="5">
+    <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">Dealers on Call</span></div>
+    <div class="stat"><span class="stat-num" data-count="24">0</span><span class="stat-suffix">/7</span><span class="stat-label">WhatsApp Response</span></div>
+    <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span><span class="stat-label">Inspected Before Sale</span></div>
+    <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">Inspection Services</span></div>
+  </div>
+
+  <a href="#services" class="scroll-cue" aria-label="Scroll down">
+    <span class="scroll-cue-line"></span><span class="scroll-cue-text">Scroll</span>
+  </a>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up center">What We Do</p>
+    <h2 class="section-title center reveal-up">Everything one dealership should cover.</h2>
+    <p class="lede center reveal-up">From the first test drive to the last signature on the transfer letter, our team handles it in-house.</p>
+
+    <div class="services-grid">
+      <article class="service-card reveal-up">
+        <div class="service-icon">↔</div>
+        <h3>Buy &amp; Sell Used Cars</h3>
+        <p>Verified sedans, hatchbacks and SUVs, priced against real market rates — no inflated tags.</p>
+      </article>
+      <article class="service-card reveal-up">
+        <div class="service-icon">✓</div>
+        <h3>Pre-Purchase Inspection</h3>
+        <p>Engine, chassis, paint and electricals checked by our team before any money changes hands.</p>
+      </article>
+      <article class="service-card reveal-up">
+        <div class="service-icon">📄</div>
+        <h3>Documentation &amp; Transfer</h3>
+        <p>Ownership transfer, token tax and registration paperwork, handled end to end.</p>
+      </article>
+      <article class="service-card reveal-up">
+        <div class="service-icon">₨</div>
+        <h3>Trade-In Valuation</h3>
+        <p>Bring your current car — we'll give you a fair on-the-spot valuation toward your next one.</p>
+      </article>
+      <article class="service-card reveal-up">
+        <div class="service-icon">🏦</div>
+        <h3>Finance Assistance</h3>
+        <p>Guidance on leasing and installment options through our partner banks.</p>
+      </article>
+      <article class="service-card reveal-up">
+        <div class="service-icon">🚚</div>
+        <h3>Delivery &amp; Pickup</h3>
+        <p>Can't make it to Mananwala? We'll arrange delivery of your inspected vehicle.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RATE LIST ============ -->
+<section class="prices" id="prices">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up center">Rate List</p>
+    <h2 class="section-title center reveal-up">Inspection &amp; service charges.</h2>
+    <p class="lede center reveal-up">Transparent rates, confirmed on WhatsApp before you book — no surprise add-ons.</p>
+
+    <div class="price-table reveal-up">
+      <div class="price-row price-head">
+        <span>Service</span><span>Duration</span><span>Rate</span>
+      </div>
+      <div class="price-row">
+        <span><strong>Basic Inspection</strong><br><small>Engine, brakes, tyres, visual body check</small></span>
+        <span class="mono">30 min</span><span class="mono price-tag">Rs. 1,500</span>
+      </div>
+      <div class="price-row">
+        <span><strong>Full Mechanical + Body Report</strong><br><small>Complete diagnostic with written report</small></span>
+        <span class="mono">90 min</span><span class="mono price-tag">Rs. 4,500</span>
+      </div>
+      <div class="price-row">
+        <span><strong>Engine Compression Test</strong><br><small>Cylinder-by-cylinder pressure check</small></span>
+        <span class="mono">45 min</span><span class="mono price-tag">Rs. 2,000</span>
+      </div>
+      <div class="price-row">
+        <span><strong>Paint Thickness &amp; Accident Check</strong><br><small>Detects repainted or repaired panels</small></span>
+        <span class="mono">30 min</span><span class="mono price-tag">Rs. 2,500</span>
+      </div>
+      <div class="price-row">
+        <span><strong>Document Verification</strong><br><small>Registration, token tax, chassis match</small></span>
+        <span class="mono">20 min</span><span class="mono price-tag">Rs. 1,000</span>
+      </div>
+      <div class="price-row">
+        <span><strong>Ownership Transfer Assistance</strong><br><small>End-to-end filing at the excise office</small></span>
+        <span class="mono">1–3 days</span><span class="mono price-tag">Rs. 5,000</span>
+      </div>
+    </div>
+    <p class="price-note">Rates confirmed on WhatsApp before booking.</p>
+  </div>
+</section>
+
+<!-- ============ BOOK A VISIT ============ -->
+<section class="book" id="book">
+  <div class="section-inner contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow reveal-up">Book a Visit</p>
+      <h2 class="section-title reveal-up">Reserve a slot to view or test drive a car.</h2>
+      <p class="about-text reveal-up">Tell us what you're looking for and when you can come by. We'll confirm your slot on WhatsApp within the hour.</p>
+      <ul class="about-list">
+        <li class="reveal-up"><span class="check">✓</span> No advance payment required to book a viewing</li>
+        <li class="reveal-up"><span class="check">✓</span> Bring your CNIC for a test drive</li>
+        <li class="reveal-up"><span class="check">✓</span> Every car on the lot is pre-inspected</li>
+      </ul>
+    </div>
+
+    <form class="contact-form reveal-up" id="bookForm" novalidate>
+      <div class="form-row">
+        <label><span>Full Name</span><input type="text" name="name" required placeholder="Your full name"></label>
+        <label><span>Phone / WhatsApp</span><input type="tel" name="phone" required placeholder="03xx xxxxxxx"></label>
+      </div>
+      <label><span>Car / Model Interested In</span><input type="text" name="model" placeholder="e.g. Honda City 2018"></label>
+      <label><span>Preferred Date</span><input type="date" name="date"></label>
+      <label><span>Message</span><textarea name="message" rows="3" placeholder="Anything else we should know?"></textarea></label>
+      <button type="submit" class="btn btn-primary form-submit">
+        <span>Send Booking on WhatsApp</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="form-note">Opens WhatsApp with your details pre-filled — nothing is sent until you hit send there.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ INSPECTION ============ -->
+<section class="book alt" id="inspection">
+  <div class="section-inner contact-grid reverse">
+    <form class="contact-form reveal-up" id="inspectForm" novalidate>
+      <div class="form-row">
+        <label><span>Full Name</span><input type="text" name="name" required placeholder="Your full name"></label>
+        <label><span>Phone / WhatsApp</span><input type="tel" name="phone" required placeholder="03xx xxxxxxx"></label>
+      </div>
+      <label><span>Car Make, Model &amp; Year</span><input type="text" name="car" placeholder="e.g. Suzuki Cultus 2020"></label>
+      <label><span>Car's Current Location</span><input type="text" name="location" placeholder="Area / city"></label>
+      <label><span>Preferred Inspection Date</span><input type="date" name="date"></label>
+      <button type="submit" class="btn btn-primary form-submit">
+        <span>Request Inspection on WhatsApp</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="form-note">We'll confirm the inspector's arrival time by reply.</p>
+    </form>
+
+    <div class="contact-info">
+      <p class="eyebrow reveal-up">Car Inspection</p>
+      <h2 class="section-title reveal-up">Get any car inspected before you buy.</h2>
+      <p class="about-text reveal-up">Already found a car elsewhere? Send us the details and location — our inspector will meet you there.</p>
+      <ul class="about-list">
+        <li class="reveal-up"><span class="check">✓</span> Written report within 24 hours</li>
+        <li class="reveal-up"><span class="check">✓</span> Inspector travels to the car's location</li>
+        <li class="reveal-up"><span class="check">✓</span> Recommended for any private-party purchase</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="location" id="location">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up center">Find Us</p>
+    <h2 class="section-title center reveal-up">Come see the lot in person.</h2>
+  </div>
+  <div class="section-inner location-grid">
+    <div class="location-info reveal-up">
+      <div class="location-pin">📍</div>
+      <h3>Shah-e-Najaf Motors</h3>
+      <p>Near Sare Rah Hotel, Faisalabad Road,<br>Mananwala, District Sheikhupura, Punjab</p>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Sare+Rah+Hotel+Faisalabad+Road+Mananwala+Sheikhupura" target="_blank" rel="noopener"><span>Get Directions</span></a>
+    </div>
+    <div class="location-map reveal-up">
+      <iframe src="https://www.google.com/maps?q=Sare+Rah+Hotel+Faisalabad+Road+Mananwala+Sheikhupura&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Shah-e-Najaf Motors location"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo-mark">SNM</span>
+      <span class="nav-logo-text">Shah-e-Najaf <em>Motors</em></span>
+      <p>A family-run dealership on Faisalabad Road, Mananwala — buying, selling and inspecting cars honestly since day one.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Talk to Us</h5>
+      <a href="https://wa.me/923004981297" target="_blank" rel="noopener">0300-4981297 — Naeem Cheemah</a>
+      <a href="https://wa.me/923044185850" target="_blank" rel="noopener">0304-4185850 — Sardar Basharat Dhillon</a>
+    </div>
+    <div class="footer-col">
+      <h5>Visit</h5>
+      <span>Near Sare Rah Hotel</span>
+      <span>Faisalabad Road, Mananwala</span>
+      <span>District Sheikhupura</span>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <a href="#services">Services</a>
+      <a href="#prices">Rate List</a>
+      <a href="#location">Location</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Shah-e-Najaf Motors. Built for the road, not the showroom floor.</span>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/923004981297?text=Hi%20Shah-e-Najaf%20Motors%2C%20I%27d%20like%20some%20info." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.2 1.1 1.1-4-.3-.4a10.2 10.2 0 01-1.6-5.4c0-5.7 4.7-10.3 10.6-10.3S26.6 9.8 26.6 15.5 21.9 25.7 16 25.7zm5.8-7.7c-.3-.2-1.9-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
